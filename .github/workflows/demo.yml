@@ -29,3 +29,4 @@ jobs:
           file: ./dockerfile  # make sure your Dockerfile is named lowercase
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/myrepo3:latest
+          
