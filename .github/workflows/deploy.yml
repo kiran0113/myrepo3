@@ -22,4 +22,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/myrepo3:latest
             docker stop web || true
             docker rm web || true
-            docker run -d --name web -p 80:80 ${{ secrets.DOCKER_USERNAME }}/myrepo3:latest
+            docker run -d --name web -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/myrepo3:latest
